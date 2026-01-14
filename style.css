@@ -1,0 +1,292 @@
+body
+{
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 2fr 15fr;
+    grid-template-areas: 
+    "side header" "side nav" "side content";
+}
+.sidebar
+{
+    grid-area: side;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: #1992D4;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    color: white;
+    min-width: 250px;
+}
+.logo
+{
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.requin{
+    width: 40px;
+    height: 40px;
+    fill: white;
+}
+.firstPart
+{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 18px;
+}
+.lastPart
+{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 18px;
+}
+.firstPart > *
+{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.lastPart > *
+{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.header
+{
+    grid-area: header;
+    padding: 20px;
+    display: flex;
+    gap: 120px;
+    font-weight: bold;
+}
+.content
+{
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 25px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    padding-right: 30px;
+    grid-template-areas: 
+    "part1 part2" "part1 part3";
+    background-color: #EEEEEE;
+}
+.conteneur
+{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap: 25px;
+}
+.box
+{
+    border-radius: 20px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+}
+.main
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.footer
+{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+.top
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.titre
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+.side
+{
+    background-color: #F4B400;
+    width: 15px;
+    height: 100%;
+}
+.box svg
+{
+    fill: black;
+}
+.box2
+{
+    border-radius: 20px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main3
+{
+    font-size: 13px;
+    color: grey;
+}
+.user
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.texte
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.titre2
+{
+    font-size: 16px;
+}
+.contenu2
+{
+    font-size: 14px;
+    color: grey;
+}
+.separation
+{
+    height: 1px;
+    width: 100%;
+    background-color: grey;
+}
+.part3
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nav
+{
+    grid-area: nav;
+    padding: 20px;
+    display: flex;
+    font-weight: bold;
+}
+svg
+{
+    fill: white;
+    height: 20px;
+    width: 20px;
+}
+.header svg
+{
+    fill: black;
+}
+.searchBar
+{
+    background-color: lightgray;
+    border-radius: 20px;
+    width: 550px;
+    height: 25px;
+}
+.header > *
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.left
+{
+    display: flex;
+    gap: 20px;
+    padding-left: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.right
+{
+    display: flex;
+    gap: 30px;
+    padding-left: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.nav .right
+{
+    padding-left: 480px;
+}
+.presentation
+{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+#pseudo
+{
+    font-size: 20px;
+}
+img
+{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 35px;
+    width: 35px;
+}
+
+.btn {
+  background-color: #1992D4;         
+  color: white;                     
+  border: none;                     
+  border-radius: 30px;              
+  padding: 0.75em 1.5em;             
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 
+    background-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:focus-visible {
+  outline: 3px solid #82caff;
+  outline-offset: 3px;
+}
+.content > *
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
